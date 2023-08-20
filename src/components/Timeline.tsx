@@ -14,6 +14,7 @@ const Timeline = () => {
 
     try {
       const newPost = await apiClient.post("/posts/post", {
+        
         content: postText,
       });
       setLatestPosts((prevPosts) => [newPost.data, ...prevPosts]);
