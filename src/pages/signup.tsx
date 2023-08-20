@@ -4,7 +4,7 @@ import apiClient from "@/lib/apiClient";
 import { useRouter } from "next/router";
 
 
-const signup = () => {
+const Signup = () => {
     const [username, setUsername] = useState<string>("");
     const [email, setEmail] = useState<string>("");
     const [password, setPassword] = useState<string>("");
@@ -111,4 +111,4 @@ const signup = () => {
   )
 }
 
-export default signup
+export default Signup;
